@@ -63,7 +63,7 @@ request(url, function (error, response, body) {
       // Minify critical-path CSS when inlining
       minify: true,
     }, function(err, criticalCss) {
-      console.log(err, criticalCss);
+      console.log(criticalCss);
       fs.unlinkSync(cssFilePath);
     });
   });
